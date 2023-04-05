@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: Space Mono;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body {
+    width: 100%;
+    max-width: 1440px;
+    background-color: hsl(222, 26%, 31%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body.active1{
+    background-color: hsl(0, 0%, 90%)
+}
+body.active1 .btn {
+    background-color: hsl(0, 5%, 81%);
+}
+body.active2{
+    background-color: hsl(268, 71%, 12%)
+}
+.num {
+    display: flex;
+    justify-content: space-between;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.num p {
+    margin: 0 0.5rem ;
+    cursor: pointer;
+}
+body.active1 .num h3 {
+    color: #111;
+}
+body.active2 .num h3 {
+    color:hsl(52, 100%, 62%)
+}
+.control p {
+    float: right;
+    margin-right: 7rem;
+    
+}
+.screen {
+    width: 29rem;
+    
+}
+#screen {
+    width: 100%;
+    height: 8rem;
+    margin: 1rem 0;
+    text-align: right;
+    color: white;
+    padding-right: 1.5rem;
+    font-size: 3rem;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 1.5rem;
+}
+button {
+    width: 6rem;
+    padding: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem ;
+    box-shadow: 0rem 0.3rem 0rem 0rem hsl(28, 16%, 356%);
+}
+.btn {
+    display: flex;
+    flex-flow: wrap;
+    width: 29rem;
+    background-color:hsl(224, 36%, 15%);
+    padding: 0.5rem 0.5rem;
+    margin: rem 0;
+    border-radius: 1.5rem;
+}
+.reset {
+    box-shadow: 0rem 0.3rem 0rem 0rem hsl(225, 21%, 49%);
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+}
+.del {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0rem 0.3rem 0rem 0rem hsl(225, 21%, 49%);
+    color: #fff;
+    font-size: 2rem;
+}
+.operator {
+    font-size: 3rem;
+
+}
+.reset, .equal {
+    width: 13rem;
+    color: hsl(0, 0, 100%);
+    font-size: 2rem;
+}
+.equal {
+    box-shadow: 0rem 0.3rem 0rem 0rem hsl(6, 70%, 34%);
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+}
+.number{
+    font-size: 3.2rem;
+}
+h3 {
+    color: #fff;
+    font-size: 3rem;
+}
+.num {
+    color: #fff;
+}
+.control{
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+.control .box {
+    width: 6rem;
+    height: 1.5rem;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 3rem;
+    margin-left: 0.4rem;
+    position: relative;
+}
+body.active1 .control .box {
+    background-color: hsl(0, 5%, 81%);
+}
+body.active2 .control #circle {
+    background-color: hsl(176, 100%, 44%);
+}
+.control #circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: hsl(6, 63%, 50%);
+    position: absolute;
+    z-index: 1;
+    border-radius: 3rem;
+}
+body.active1 .control #circle {
+    background-color:hsl;
+}
+.control p{
+	color: #FFF;
+	cursor: pointer;
+	margin-right: 4px;
+}
+body.active1 .control p{
+	color: #111;
+}
+body.active1 .right p{
+	color: #111;
+}
+body.active2 .control p{
+	color: hsl(52, 100%, 62%);
+}
+body.active2 .right p{
+	color: hsl(52, 100%, 62%);
+}
+body.active1 #screen{
+	background-color: hsl(0, 0%, 93%);
+	color: #111;
+}
+body.active2 #screen{
+	background-color: hsl(268, 71%, 12%);
+	color: hsl(52, 100%, 62%);
+}
+body.active1 button{
+	box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+}
+body.active2 button{
+	box-shadow: 0px 3px 0px 0px hsl(268, 47%, 21%);
+	background-color: hsl(290, 70%, 36%);
+	color: hsl(52, 100%, 62%);
+}
+body.active2 .btn{
+	background-color: hsl(268, 71%, 12%);
+}
+body.active1 .reset, body.active1 .del{
+	box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+	background-color: hsl(185, 42%, 37%);
+}
+body.active2 .reset, body.active2 .del{
+	box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
+	background-color: hsl(268, 47%, 21%);
+	color: #fff;
+}
+body.active1 .equal{
+	box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
+	background-color: hsl(25, 98%, 40%);
+}
+body.active2 .equal{
+	box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
+	background-color: hsl(176, 100%, 44%);
+	color: #fff;
+}
